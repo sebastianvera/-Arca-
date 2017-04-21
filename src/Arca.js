@@ -1,10 +1,23 @@
+const Context = require('./modules/Context');
+const Cache = require('./modules/Cache');
+const Sprite = require('./modules/Sprite');
+
 class Arca {
   constructor() {
-    this.canvas = document.createElement('canvas');
-    this.ctx = this.canvas.getContext("2d");
-    this.canvas.setAttribute('id', 'canvas');
-    document.body.appendChild(this.canvas);
+    this._context = new Context();
+    this._cache = new Cache();
+  }
+
+  resize(width, height) {
+    this._context.setSize(width, height);
+  }
+
+  store(key, path, type) {
+    this._cache.store(key, path, type);
   }
 }
 
-const arca = new Arca();
+module.exports = {
+  Arca,
+  Sprite
+};
