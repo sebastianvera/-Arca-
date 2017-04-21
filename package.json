@@ -1,7 +1,7 @@
 {
   "name": "arcajs",
   "version": "0.0.1",
-  "description": "A simple 2D used for LD jams",
+  "description": "A simple 2D game engine used for LD jams",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --open",
@@ -14,7 +14,7 @@
   },
   "keywords": [
     "2d",
-    "games",
+    "game",
     "engine",
     "javascript"
   ],
