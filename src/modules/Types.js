@@ -14,9 +14,8 @@ class Types {
   static GetType(type) {
     switch(type) {
       case Types.Image:
-        return Types.Image;
       case Types.Audio:
-        return Types.Audio;
+        return type;
       default:
         return undefined;
     }
