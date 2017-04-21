@@ -2,10 +2,10 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/Arca.js',
+  entry: './src/App.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'Arca_min.js'
+    filename: 'App_min.js'
   },
   module: {
     rules: [
